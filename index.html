@@ -3,37 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mis XV Años - María</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<title>Mis XV Años - Valeria</title>
 
-<!-- CSS externo -->
+<!-- FUENTES -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- CSS -->
 <link rel="stylesheet" href="css/estilos.css">
 
 </head>
+
 <body>
 
-<!-- INTRO -->
-<div id="intro">
-<div class="intro-content">
-  <img src="https://i.postimg.cc/VvK8DswN/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260316-191620-0000.png" 
-       alt="Nombre" 
-       style="width:400px; max-width:90%; display:block; margin:0 auto;">
-  <p>Mis XV Años</p>
-  <p id="nombre-invitado" style="font-size:28px; color:#FFD700; margin-top:15px;"></p>
-  <button onclick="abrirInvitacion()">Abrir Invitación</button>
-</div>
-</div>
-
-<audio id="musica" src="audio/musica.mp3" type="audio/mpeg"></audio>
+<!-- BOTON MUSICA -->
 <button class="music-btn" onclick="toggleMusic()">🎵</button>
 
-<div class="container">
- 
-<!-- PORTADA -->
+<!-- AUDIO -->
+<audio id="musica" loop>
+<source src="audio/musica.mp3" type="audio/mpeg">
+</audio>
 
+<div class="container">
+
+<!-- PORTADA -->
 <div class="section">
 <h1>Valeria</h1>
 <p>Mis XV Años</p>
@@ -42,38 +35,19 @@
 </div>
 
 <!-- CONTADOR -->
-
 <div class="section">
-
 <h2>Cuenta Regresiva</h2>
 
 <div class="countdown">
-
-<div class="time-box">
-<span id="dias">00</span>
-<p>Días</p>
+<div class="time-box"><span id="dias">00</span><p>Días</p></div>
+<div class="time-box"><span id="horas">00</span><p>Horas</p></div>
+<div class="time-box"><span id="minutos">00</span><p>Min</p></div>
+<div class="time-box"><span id="segundos">00</span><p>Seg</p></div>
 </div>
 
-<div class="time-box">
-<span id="horas">00</span>
-<p>Horas</p>
-</div>
-
-<div class="time-box">
-<span id="minutos">00</span>
-<p>Min</p>
-</div>
-
-<div class="time-box">
-<span id="segundos">00</span>
-<p>Seg</p>
-</div>
-
-</div>
 </div>
 
 <!-- MENSAJE -->
-
 <div class="section">
 <p>
 Con la bendición de Dios<br>
@@ -85,7 +59,6 @@ este momento tan especial
 </div>
 
 <!-- PADRES -->
-
 <div class="section">
 <h2>Mis Padres</h2>
 <p>Ana Martínez</p>
@@ -93,7 +66,6 @@ este momento tan especial
 </div>
 
 <!-- PADRINOS -->
-
 <div class="section">
 <h2>Mis Padrinos</h2>
 <p>Laura Hernández</p>
@@ -101,7 +73,6 @@ este momento tan especial
 </div>
 
 <!-- CEREMONIA -->
-
 <div class="section">
 <h2>Ceremonia Religiosa</h2>
 <p>Parroquia San Miguel</p>
@@ -115,7 +86,6 @@ Ver Ubicación
 </div>
 
 <!-- RECEPCION -->
-
 <div class="section">
 <h2>Recepción</h2>
 <p>Salón Jardín Real</p>
@@ -129,73 +99,52 @@ Cómo llegar
 </div>
 
 <!-- ITINERARIO -->
-
 <div class="section">
-
 <h2>Itinerario del Evento</h2>
 
 <div class="timeline">
 
 <div class="timeline-item">
 <div class="circle">👥</div>
-<div class="content">
-<span>7:30 pm</span>
-Llegada de invitados
-</div>
+<div class="content"><span>7:30 pm</span> Llegada de invitados</div>
 </div>
 
 <div class="timeline-item">
 <div class="circle heart">❤</div>
-<div class="content">
-<span>8:00 pm</span>
-Presentación
-</div>
+<div class="content"><span>8:00 pm</span> Presentación</div>
 </div>
 
 <div class="timeline-item">
 <div class="circle">🎵</div>
-<div class="content">
-<span>8:30 pm</span>
-Vals
-</div>
+<div class="content"><span>8:30 pm</span> Vals</div>
 </div>
 
 <div class="timeline-item">
 <div class="circle">🥂</div>
-<div class="content">
-<span>8:45 pm</span>
-Brindis
-</div>
+<div class="content"><span>8:45 pm</span> Brindis</div>
 </div>
 
 <div class="timeline-item">
 <div class="circle">🍽</div>
-<div class="content">
-<span>8:50 pm</span>
-Cena
-</div>
+<div class="content"><span>8:50 pm</span> Cena</div>
 </div>
 
 <div class="timeline-item">
 <div class="circle">💿</div>
-<div class="content">
-<span>9:35 pm</span>
-Fiesta DJ
-</div>
+<div class="content"><span>9:35 pm</span> Fiesta DJ</div>
 </div>
 
 </div>
-</div><!-- VESTIMENTA -->
+</div>
 
+<!-- VESTIMENTA -->
 <div class="section">
 <h2>Código de Vestimenta</h2>
 <p>Formal / Elegante</p>
 </div>
 
 <!-- GALERIA -->
-
 <div class="section gallery">
-
 <h2>Galería</h2>
 
 <img src="https://i.postimg.cc/bw0jBtSR/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Cop-20260313-154256-0000.webp">
@@ -204,8 +153,8 @@ Fiesta DJ
 
 </div>
 
+<!-- REGALOS -->
 <div class="section">
-
 <h2>🎁 Sobre de Regalos</h2>
 
 <p>
@@ -217,50 +166,38 @@ puedes hacerlo mediante transferencia.
 <button class="accordion">Ver datos bancarios</button>
 
 <div class="panel">
-
 <p><strong>Banco:</strong> BBVA Bancomer</p>
 <p><strong>Beneficiario:</strong> Valeria González Martínez</p>
-<p><strong>Número de cuenta:</strong> 012345678901234567</p>
+<p><strong>Cuenta:</strong> 012345678901234567</p>
 <p><strong>CLABE:</strong> 012345678901234567</p>
-
 </div>
 
 </div>
 
 <!-- CONFIRMACION -->
-
 <div class="section">
-
 <h2>Confirmar Asistencia</h2>
-
 <p>Por favor confirma antes del 1 de Agosto</p>
 
 <button class="btn" onclick="mostrarPopup()">
 Confirmar por WhatsApp
 </button>
-
 </div>
 
 <!-- FINAL -->
-
 <div class="section">
-
-<p>
-Gracias por ser parte de este día tan especial
-</p>
-
+<p>Gracias por ser parte de este día tan especial</p>
 <h2>Te espero</h2>
 <h1>Valeria</h1>
-
 </div>
 
 </div>
 
+<!-- POPUP -->
 <div id="confirmPopup" class="popup">
 <div class="popup-box">
 
 <h2>✨ Confirmación</h2>
-
 <p>Serás redirigido a WhatsApp para enviar tu confirmación.</p>
 
 <button onclick="irWhatsapp()">Continuar</button>
@@ -272,7 +209,8 @@ Cancelar
 </div>
 </div>
 
-<!-- JS externo -->
+<!-- JS -->
 <script src="js/script.js"></script>
+
 </body>
 </html>
