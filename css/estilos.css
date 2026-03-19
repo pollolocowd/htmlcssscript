@@ -497,3 +497,14 @@ animation:aparecer 0.6s forwards, brillo 2s infinite 2s;
 animation:fiesta 1.5s infinite;
 }
 
+button, .btn, .accordion {
+outline: none;
+-webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+.btn:focus,
+.accordion:focus {
+outline: none;
+box-shadow: none;
+}
