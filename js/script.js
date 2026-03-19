@@ -1,4 +1,3 @@
-
 function toggleMusic(){
 
 let music = document.getElementById("musica");
@@ -18,7 +17,7 @@ btn.style.animation = "musicPulse 2s infinite";
 
 }
 
-const fechaEvento = new Date("Aug 15, 2026 16:00:00").getTime();
+const fechaEvento = new Date("Dec 20, 2026 17:00:00").getTime();
 
 setInterval(function(){
 
@@ -26,6 +25,16 @@ const ahora = new Date().getTime();
 const distancia = fechaEvento - ahora;
 
 if(distancia < 0){
+
+document.querySelector(".countdown").innerHTML = `
+<h2 style="font-family:'Great Vibes'; font-size:40px;">
+🎉 ¡HOY ES EL GRAN DÍA! 🎉
+</h2>
+<p style="margin-top:10px; font-size:18px;">
+Gracias por acompañarme 💖
+</p>
+`;
+
 return;
 }
 
@@ -116,7 +125,7 @@ function irWhatsapp(){
         "Hola, confirmo mi asistencia a los XV de Valeria 🎉"
     );
 
-    // Abrir WhatsApp en nueva pestaña
+// Abrir WhatsApp en nueva pestaña
     window.open(
         "https://wa.me/5213341024243?text=" + mensaje,
         "_blank"
